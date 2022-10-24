@@ -1,0 +1,43 @@
+.main {
+  padding: 2rem;
+}
+
+.container {
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  border: var(--bordergrey);
+  border-radius: var(--borderradius);
+  max-width: 1200px;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.content {
+  width: 100%;
+}
+
+.content__item {
+  padding: .5rem;
+  width: 100%;
+  text-align: center;
+}
+
+
+.content__item:first-child {
+  text-align: start;
+}
+
+.content__item:last-child {
+  text-align: end;
+}
+
+.content__title {
+  margin: 0.5rem 0;
+}
