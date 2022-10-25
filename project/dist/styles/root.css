@@ -85,13 +85,43 @@ body {
 }
 
 h1,h2,h3,h4 { font-weight: 500;}
-button,input,select {
+input, select, button {
   background: var(--darkgrey1);
   border: var(--bordergrey);
   border-radius: var(--borderradius);
   color: var(--white1);
-  padding: 6px 14px;
 }
+
+select { padding: 0.55rem; }
+button { 
+  padding: 0.5rem 1.2rem; 
+}
+form > button {
+  padding: 0.6rem 1.4rem;
+}
+
+input[type="time"] { padding: 0.5rem; }
+input[type="time"]::-webkit-calendar-picker-indicator {
+  height: 0.9em;
+}
+input[type="time"]::-webkit-datetime-edit {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+}
+input[type="date"]::-webkit-datetime-edit {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+}
+input[type="date"] { padding: 0.5rem; }
+input[type="date"]::-webkit-calendar-picker-indicator {
+  height: 0.9em;
+}
+input[type="text"] {padding: 0.6rem;}
+input[type="text"]::placeholder { color: var(--white3);}
 
 button:hover,input:hover,select:hover { background: var(--darkgrey3);}
 button,input,select,textarea:focus {outline: none;}
